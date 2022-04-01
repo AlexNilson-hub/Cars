@@ -1,2 +1,0 @@
-# Cars
-Test task React
