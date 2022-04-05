@@ -3,8 +3,18 @@ import ImageList from '@mui/material/ImageList';
 import Typography from "@mui/material/Typography";
 import {Card, CardContent, Skeleton} from "@mui/material";
 import Box from "@mui/material/Box";
+import {useState} from "react";
+import FavoriteTwoToneIcon from "@mui/icons-material/FavoriteTwoTone";
+import IconButton from "@mui/material/IconButton";
 
 export default function CardTopCollections() {
+    //Счетчик лайков
+    const [like, setLike] = useState(0)
+
+    function increment() {
+        setLike(prev => prev + 1)
+    }
+
     return (
         <Box xs={1} sx={{width: 'auto', height: 'auto', textAlign: 'left'}}>
             <Typography gutterBottom variant="h5" component="div">
@@ -35,6 +45,9 @@ export default function CardTopCollections() {
                             <Typography variant="h6" color="text">
                                 {item.price} ₽
                             </Typography>
+                            <IconButton  onClick={increment} sx={{mt: 2 }} aria-label="like + 1" color="inherit">
+                                <FavoriteTwoToneIcon/><h6>{like}</h6>
+                            </IconButton>
                         </CardContent>
                     </Card>
                 ))}

@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import Typography from "@mui/material/Typography";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import IconButton from "@mui/material/IconButton";
+import {LOGO_USER} from "../assets/images/constsImg";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
@@ -45,7 +46,7 @@ export default function AvatarUser() {
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                 variant="dot"
             >
-                <Avatar alt="user" src="http://st2.depositphotos.com/1006318/10458/v/950/depositphotos_104583834-stock-illustration-business-man-profile-icon-male.jpg" />
+                <Avatar alt="user" src={LOGO_USER}/>
             </StyledBadge>
             <Typography gutterBottom variant="h7" component="div">
                 Василий Иванов

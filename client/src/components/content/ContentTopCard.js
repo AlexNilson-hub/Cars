@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 
 import AvatarUser from "../AvatarUser";
 import Img from "../img/Img"
+import {LOGO_TC} from "../../assets/images/constsImg";
 
 
 
@@ -12,7 +13,7 @@ export default function ContentTopCard() {
     return (
         <Card elevation={10}>
             <Img
-                src="https://1.bp.blogspot.com/-btPgNbf4Lds/UJEsaAkqWqI/AAAAAAAAUCI/jjsm14Am3aI/s1600/BMW+i8+Concept+8.JPG"
+                src={LOGO_TC}
                 alt=""
             />
             <CardContent sx={{width: 370, height: 180}}>

@@ -1,8 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import ContentTop from "./content/ContentTop";
-import ContentBottom from "./content/ContentBottom";
+// import ContentTop from "./content/ContentTop";
+// import ContentBottom from "./content/ContentBottom";
 import {observer} from "mobx-react-lite";
+import TablNavigate from "./tabl-collections/TablNavigate";
 
 const MainContent = observer(() => {
     return (
@@ -13,8 +14,9 @@ const MainContent = observer(() => {
                 // backgroundColor: 'primary.dark',
             }}
         >
-            <ContentTop/>
-            <ContentBottom/>
+            <TablNavigate/>
+            {/*<ContentTop/>*/}
+            {/*<ContentBottom/>*/}
         </Box>
     );
 });
